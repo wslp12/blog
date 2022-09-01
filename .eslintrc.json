@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "ignorePatterns": ["webpack.config.js"],
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "indent": "off", // prettier 에서 관리
+    "quotes": "off", // prettier 에서 관리
+    "react/jsx-no-useless-fragment": "off", // prettier 에서 관리
+    "no-console": "off",
+    "implicit-arrow-linebreak": "off", // prettier 에서 관리
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "comma-style": "off", // prettier 에서 관리
+    "object-curly-newline": "off", // prettier 에서 관리
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.spec.js",
+          "**/*.test.tsx",
+          "**/*.spec.tsx"
+        ]
+      }
+    ],
+    "operator-linebreak": "off", // 프리티어에서 관리
+    "react/jsx-one-expression-per-line": "off", // 프리티어에서 관리
+    "react/jsx-wrap-multilines": "off" // 프리티어에서 관리
+  }
+}

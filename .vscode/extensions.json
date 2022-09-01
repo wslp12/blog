@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "SimonSiefke.prettier-vscode",
+    "ExodiusStudios.comment-anchors",
+    "EditorConfig.EditorConfig"
+  ],
+
+  "unwantedRecommendations": []
+}
